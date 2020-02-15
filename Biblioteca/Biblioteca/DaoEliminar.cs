@@ -9,7 +9,7 @@ namespace Biblioteca
 {
     class DaoEliminar
     {
-        public bool MEliminarProducto(clsEliminar elim)
+        public bool MeliminarLibro(clsEliminar elim)
         {
             MySqlConnection conexxion = new MySqlConnection();
             MySqlCommand comando = new MySqlCommand();
@@ -18,7 +18,7 @@ namespace Biblioteca
                 conexxion.ConnectionString = "server=localhost; database=biblioteca; user=root; pwd=root1";
                 conexxion.Open();
 
-                string strSQL = "delete from productos where idProducto = " + elim.ID;
+                string strSQL = "delete from libros where Id = " + elim.ID;
                 comando = new MySqlCommand(strSQL, conexxion);
 
 

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAñoP = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtPaisP = new System.Windows.Forms.TextBox();
+            this.txtSinopsis = new System.Windows.Forms.TextBox();
+            this.txtCarrera = new System.Windows.Forms.TextBox();
+            this.txtMateria = new System.Windows.Forms.TextBox();
+            this.txtNoEdicion = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,71 +47,79 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgLibros = new System.Windows.Forms.DataGridView();
             this.btnEliminat = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgLibros)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox8
+            // txtAñoP
             // 
-            this.textBox8.Location = new System.Drawing.Point(199, 141);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(85, 20);
-            this.textBox8.TabIndex = 46;
+            this.txtAñoP.Location = new System.Drawing.Point(199, 141);
+            this.txtAñoP.Name = "txtAñoP";
+            this.txtAñoP.Size = new System.Drawing.Size(85, 20);
+            this.txtAñoP.TabIndex = 46;
+            this.txtAñoP.Text = "1998";
             // 
-            // textBox7
+            // txtAutor
             // 
-            this.textBox7.Location = new System.Drawing.Point(139, 173);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(273, 20);
-            this.textBox7.TabIndex = 45;
+            this.txtAutor.Location = new System.Drawing.Point(139, 173);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(273, 20);
+            this.txtAutor.TabIndex = 45;
+            this.txtAutor.Text = "Dros";
             // 
-            // textBox6
+            // txtPaisP
             // 
-            this.textBox6.Location = new System.Drawing.Point(214, 208);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(198, 20);
-            this.textBox6.TabIndex = 44;
+            this.txtPaisP.Location = new System.Drawing.Point(214, 208);
+            this.txtPaisP.Name = "txtPaisP";
+            this.txtPaisP.Size = new System.Drawing.Size(198, 20);
+            this.txtPaisP.TabIndex = 44;
+            this.txtPaisP.Text = "Mexico";
             // 
-            // textBox5
+            // txtSinopsis
             // 
-            this.textBox5.Location = new System.Drawing.Point(161, 237);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(251, 72);
-            this.textBox5.TabIndex = 43;
+            this.txtSinopsis.Location = new System.Drawing.Point(161, 237);
+            this.txtSinopsis.Multiline = true;
+            this.txtSinopsis.Name = "txtSinopsis";
+            this.txtSinopsis.Size = new System.Drawing.Size(251, 72);
+            this.txtSinopsis.TabIndex = 43;
+            this.txtSinopsis.Text = "Niña con ojos de boton";
             // 
-            // textBox4
+            // txtCarrera
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 318);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(206, 20);
-            this.textBox4.TabIndex = 42;
+            this.txtCarrera.Location = new System.Drawing.Point(156, 318);
+            this.txtCarrera.Name = "txtCarrera";
+            this.txtCarrera.Size = new System.Drawing.Size(206, 20);
+            this.txtCarrera.TabIndex = 42;
+            this.txtCarrera.Text = "Sistemas";
             // 
-            // textBox3
+            // txtMateria
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 350);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 20);
-            this.textBox3.TabIndex = 41;
+            this.txtMateria.Location = new System.Drawing.Point(156, 350);
+            this.txtMateria.Name = "txtMateria";
+            this.txtMateria.Size = new System.Drawing.Size(206, 20);
+            this.txtMateria.TabIndex = 41;
+            this.txtMateria.Text = "DB";
             // 
-            // textBox2
+            // txtNoEdicion
             // 
-            this.textBox2.Location = new System.Drawing.Point(177, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 40;
+            this.txtNoEdicion.Location = new System.Drawing.Point(177, 109);
+            this.txtNoEdicion.Name = "txtNoEdicion";
+            this.txtNoEdicion.Size = new System.Drawing.Size(100, 20);
+            this.txtNoEdicion.TabIndex = 40;
+            this.txtNoEdicion.Text = "1";
             // 
-            // textBox1
+            // txtTitulo
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 20);
-            this.textBox1.TabIndex = 39;
+            this.txtTitulo.Location = new System.Drawing.Point(147, 79);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(265, 20);
+            this.txtTitulo.TabIndex = 39;
+            this.txtTitulo.Text = "Coraline";
             // 
             // label10
             // 
@@ -200,22 +208,23 @@
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(187, 20);
             this.txtISBN.TabIndex = 29;
+            this.txtISBN.Text = "123";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(435, 21);
+            this.panel1.Controls.Add(this.dtgLibros);
+            this.panel1.Location = new System.Drawing.Point(418, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(418, 453);
+            this.panel1.Size = new System.Drawing.Size(458, 453);
             this.panel1.TabIndex = 28;
             // 
-            // dataGridView1
+            // dtgLibros
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(384, 391);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgLibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgLibros.Location = new System.Drawing.Point(3, 26);
+            this.dtgLibros.Name = "dtgLibros";
+            this.dtgLibros.Size = new System.Drawing.Size(452, 391);
+            this.dtgLibros.TabIndex = 0;
             // 
             // btnEliminat
             // 
@@ -225,6 +234,7 @@
             this.btnEliminat.TabIndex = 27;
             this.btnEliminat.Text = "Eliminar";
             this.btnEliminat.UseVisualStyleBackColor = true;
+            this.btnEliminat.Click += new System.EventHandler(this.btnEliminat_Click);
             // 
             // btnModificar
             // 
@@ -243,6 +253,7 @@
             this.btnAgregar.TabIndex = 25;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnVer
             // 
@@ -252,20 +263,21 @@
             this.btnVer.TabIndex = 24;
             this.btnVer.Text = "Ver libros";
             this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 498);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAñoP);
+            this.Controls.Add(this.txtAutor);
+            this.Controls.Add(this.txtPaisP);
+            this.Controls.Add(this.txtSinopsis);
+            this.Controls.Add(this.txtCarrera);
+            this.Controls.Add(this.txtMateria);
+            this.Controls.Add(this.txtNoEdicion);
+            this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -284,7 +296,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgLibros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,14 +304,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAñoP;
+        private System.Windows.Forms.TextBox txtAutor;
+        private System.Windows.Forms.TextBox txtPaisP;
+        private System.Windows.Forms.TextBox txtSinopsis;
+        private System.Windows.Forms.TextBox txtCarrera;
+        private System.Windows.Forms.TextBox txtMateria;
+        private System.Windows.Forms.TextBox txtNoEdicion;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -311,7 +323,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgLibros;
         private System.Windows.Forms.Button btnEliminat;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;

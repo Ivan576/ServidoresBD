@@ -8,16 +8,16 @@ namespace Biblioteca
 {
     class clsVer
     {
-        int id;
-        int isbn;
-        String titulo;
-        int numEdicion;
-        int añoP;
-        String autor;
-        String paisP;
-        String sinopsis;
-        String carrera;
-        String materia;
+        private int id;
+        private int isbn;
+        private String titulo;
+        private int numEdicion;
+        private int añoP;
+        private String autor;
+        private String paisP;
+        private String sinopsis;
+        private String carrera;
+        private String materia;
 
 
         public int ID

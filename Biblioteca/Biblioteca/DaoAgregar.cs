@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,21 +15,22 @@ namespace Biblioteca
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=itsur; user=root; pwd=root1";
+                conexxion.ConnectionString = "server=localhost; database=biblioteca; user=root; pwd=root1";
                 conexxion.Open();
 
-                comando.CommandText = "insertarProducto";
+                comando.CommandText = "InsertarLibro";
                 comando.Connection = conexxion;
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
-                comando.Parameters.AddWithValue("idProducto", null);
-                comando.Parameters.AddWithValue("Nombre", agre.Nombre);
-                comando.Parameters.AddWithValue("Precio", agre.Precio);
-                comando.Parameters.AddWithValue("Cantidad", agre.Cantidad);
-                comando.Parameters.AddWithValue("Descripcion", agre.Descripcion);
-                comando.Parameters.AddWithValue("Partida", agre.Partida);
-
-
-
+                comando.Parameters.AddWithValue("Id", null);
+                comando.Parameters.AddWithValue("Isbn", agre.ISBN);
+                comando.Parameters.AddWithValue("Titulo", agre.Titulo);
+                comando.Parameters.AddWithValue("NumEdicion", agre.NumEdicion);
+                comando.Parameters.AddWithValue("Año", agre.AñoP);
+                comando.Parameters.AddWithValue("Autor", agre.Autor);
+                comando.Parameters.AddWithValue("PaisP", agre.PaisP);
+                comando.Parameters.AddWithValue("Sinopsis", agre.Sinopsis);
+                comando.Parameters.AddWithValue("Carrera", agre.Carrera);
+                comando.Parameters.AddWithValue("Materia", agre.Materia);
                 comando.ExecuteNonQuery();
             }
             catch
