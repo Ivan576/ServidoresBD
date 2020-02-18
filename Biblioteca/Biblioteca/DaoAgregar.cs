@@ -15,7 +15,7 @@ namespace Biblioteca
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=biblioteca; user=root; pwd=root1";
+                conexxion.ConnectionString = "server=192.168.1.74; database=biblioteca; user=admin; pwd=itsur123;";
                 conexxion.Open();
 
                 comando.CommandText = "InsertarLibro";
@@ -25,7 +25,7 @@ namespace Biblioteca
                 comando.Parameters.AddWithValue("Isbn", agre.ISBN);
                 comando.Parameters.AddWithValue("Titulo", agre.Titulo);
                 comando.Parameters.AddWithValue("NumEdicion", agre.NumEdicion);
-                comando.Parameters.AddWithValue("Año", agre.AñoP);
+                comando.Parameters.AddWithValue("Año", agre.Año);
                 comando.Parameters.AddWithValue("Autor", agre.Autor);
                 comando.Parameters.AddWithValue("PaisP", agre.PaisP);
                 comando.Parameters.AddWithValue("Sinopsis", agre.Sinopsis);

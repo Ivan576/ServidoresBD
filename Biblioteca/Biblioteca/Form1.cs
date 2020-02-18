@@ -26,7 +26,7 @@ namespace Biblioteca
             agregaL.ISBN = Convert.ToInt32(txtISBN.Text);
             agregaL.Titulo = txtTitulo.Text;
             agregaL.NumEdicion = Convert.ToInt32(txtNoEdicion.Text);
-            agregaL.AñoP = Convert.ToInt32(txtAñoP.Text);
+            agregaL.Año = Convert.ToInt32(txtAñoP.Text);
             agregaL.Autor = txtAutor.Text;
             agregaL.PaisP = txtPaisP.Text;
             agregaL.Sinopsis = txtSinopsis.Text;
@@ -55,6 +55,13 @@ namespace Biblioteca
         {
             FrmeliminarLibro ventana = new FrmeliminarLibro();
             ventana.Show();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            FrmeliminarLibro buscarId = new FrmeliminarLibro();
+            buscarId.Show();
+
         }
     }
 }

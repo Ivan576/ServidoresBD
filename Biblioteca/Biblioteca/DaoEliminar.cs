@@ -15,7 +15,7 @@ namespace Biblioteca
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=biblioteca; user=root; pwd=root1";
+                conexxion.ConnectionString = "server=192.168.1.74; database=biblioteca; user=admin; pwd=itsur123;";
                 conexxion.Open();
 
                 string strSQL = "delete from libros where Id = " + elim.ID;

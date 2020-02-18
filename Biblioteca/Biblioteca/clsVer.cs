@@ -12,7 +12,7 @@ namespace Biblioteca
         private int isbn;
         private String titulo;
         private int numEdicion;
-        private int añoP;
+        private int año;
         private String autor;
         private String paisP;
         private String sinopsis;
@@ -68,15 +68,15 @@ namespace Biblioteca
             }
         }
 
-        public int AñoP
+        public int Año
         {
             get
             {
-                return añoP;
+                return año;
             }
             set
             {
-                añoP = value;
+                año = value;
             }
         }
 
